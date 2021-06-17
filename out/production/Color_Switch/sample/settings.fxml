@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="parentContainerSet" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SettingController">
+   <children>
+      <AnchorPane fx:id="anchorRootSet" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #1a1a22;">
+         <children>
+            <Text boundsType="VISUAL" fill="WHITE" fontSmoothingType="LCD" layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SETTINGS" textAlignment="CENTER" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Avenir Book" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#808080" layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THEMES" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="180.0">
+               <font>
+                  <Font name="Avenir Book" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="230.0">
+               <image>
+                  <Image url="@Icons/Halloween.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="230.0">
+               <image>
+                  <Image url="@Icons/regular.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="400.0">
+               <image>
+                  <Image url="@Icons/light.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="400.0">
+               <image>
+                  <Image url="@Icons/retro.png" />
+               </image>
+            </ImageView>
+            <Text fill="#9da8cc" layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGULAR" AnchorPane.leftAnchor="237.0" AnchorPane.topAnchor="350.0">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#9da8cc" layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HALLOWEEN" AnchorPane.leftAnchor="87.0" AnchorPane.topAnchor="350.0">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#9da8cc" layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIGHT" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="530.0">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="#9da8cc" layoutX="10.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RETRO" AnchorPane.leftAnchor="245.0" AnchorPane.topAnchor="530.0">
+               <font>
+                  <Font name="Avenir Book" size="12.0" />
+               </font>
+            </Text>
+            <Button id="mainmenu-button" fx:id="mainmenu" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#returnMenu" style="-fx-background-color: #1a1a22; -fx-border-color: #FFFFFF; -fx-border-radius: 15;" text="MAIN MENU" textFill="WHITE" AnchorPane.leftAnchor="135.0" AnchorPane.topAnchor="600.0">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+               </padding>
+            </Button>
+            <Button id="regular-theme" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#theme0" opacity="0.0" text="Butthww" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="255.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="light-theme" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#theme1" opacity="0.0" style="-fx-background-color: #FFFFFF;" text="Buttlreg" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="250.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="halloween-theme" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#theme2" opacity="0.0" text="Butthw" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="430.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Circle fx:id="playcircle" fill="#141a27" layoutX="10.0" layoutY="10.0" radius="30.0" stroke="#425780" strokeType="INSIDE" strokeWidth="2.0" style="-fx-border-colour: #FFFFFF;" AnchorPane.leftAnchor="117.0" AnchorPane.topAnchor="95.0" />
+            <Circle fx:id="playcircle1" fill="#141a27" layoutX="20.0" layoutY="20.0" radius="30.0" stroke="#425780" strokeType="INSIDE" strokeWidth="2.0" style="-fx-border-colour: #FFFFFF;" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="95.0" />
+            <ImageView fx:id="hardImg" fitHeight="60.0" fitWidth="60.0" opacity="0.65" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="95.0">
+               <image>
+                  <Image url="@Icons/noHard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dragImg" fitHeight="45.0" fitWidth="45.0" opacity="0.66" AnchorPane.leftAnchor="125.0" AnchorPane.topAnchor="103.0">
+               <image>
+                  <Image url="@Icons/noDrag.png" />
+               </image>
+            </ImageView>
+            <Button id="drag-button" fx:id="drag" maxHeight="20.0" maxWidth="20.0" mnemonicParsing="false" onAction="#dragMode" opacity="0.0" text="Butdrg" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="95.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="retro-theme" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#theme3" opacity="0.0" text="Buttrt" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="430.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+            <Button id="hard-button" fx:id="hardmode" layoutX="10.0" layoutY="10.0" maxHeight="20.0" maxWidth="20.0" mnemonicParsing="false" onAction="#makeHard" opacity="0.0" text="Buthrd" AnchorPane.leftAnchor="233.0" AnchorPane.topAnchor="95.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

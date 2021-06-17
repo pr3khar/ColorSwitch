@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="parentContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #141a27;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane fx:id="anchorRoot" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #141a27;" />
+      <ImageView fitHeight="45.0" fitWidth="45.0" opacity="0.53">
+         <image>
+            <Image url="@Icons/icons8-settings-100.png" />
+         </image>
+         <StackPane.margin>
+            <Insets left="-310.0" top="-600.0" />
+         </StackPane.margin>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" opacity="0.7">
+         <image>
+            <Image url="@Icons/close.png" />
+         </image>
+         <StackPane.margin>
+            <Insets left="305.0" top="-600.0" />
+         </StackPane.margin>
+      </ImageView>
+      <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text=" COLOR SWITCH" textAlignment="CENTER" wrappingWidth="160.95619201660156">
+         <font>
+            <Font name="Avenir Book" size="32.0" />
+         </font>
+         <StackPane.margin>
+            <Insets top="-375.0" />
+         </StackPane.margin>
+      </Text>
+      <Button id="load-button" fx:id="loadbutton" mnemonicParsing="false" onAction="#loadMenu" style="-fx-border-color: #29334d#29334d; -fx-background-color: #29334d; -fx-background-radius: 10; -fx-border-radius: 10;" text="LOAD" textFill="WHITE">
+         <padding>
+            <Insets bottom="7.0" left="22.0" right="22.0" top="7.0" />
+         </padding>
+         <font>
+            <Font name="Avenir Book" size="15.0" />
+         </font>
+         <StackPane.margin>
+            <Insets top="450.0" />
+         </StackPane.margin>
+      </Button>
+      <Text fill="#908e8e" strokeType="OUTSIDE" strokeWidth="0.0" text="developed by">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <StackPane.margin>
+            <Insets left="-140.0" top="570.0" />
+         </StackPane.margin>
+      </Text>
+      <Text fill="#d7d7d7" strokeType="OUTSIDE" strokeWidth="0.0" text="Shrivatsa">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <StackPane.margin>
+            <Insets top="570.0" />
+         </StackPane.margin>
+      </Text>
+      <Text fill="#908e8e" strokeType="OUTSIDE" strokeWidth="0.0" text="and">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <StackPane.margin>
+            <Insets left="80.0" top="570.0" />
+         </StackPane.margin>
+      </Text>
+      <Text fill="#e4e2e2" strokeType="OUTSIDE" strokeWidth="0.0" text="Prakhar">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <StackPane.margin>
+            <Insets left="155.0" top="570.0" />
+         </StackPane.margin>
+      </Text>
+      <Button id="settings-button" fx:id="settings" mnemonicParsing="false" onAction="#openSettings" opacity="0.0" text="set">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <StackPane.margin>
+            <Insets left="-308.0" top="-600.0" />
+         </StackPane.margin>
+      </Button>
+      <Button id="exit-button" fx:id="closebutton" mnemonicParsing="false" onAction="#closeButtonAction" opacity="0.0" text="ext">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <StackPane.margin>
+            <Insets left="305.0" top="-600.0" />
+         </StackPane.margin>
+      </Button>
+      <ImageView fx:id="image1" fitHeight="200.0" fitWidth="200.0">
+         <image>
+            <Image url="@Icons/Disk.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image2" fitHeight="150.0" fitWidth="150.0">
+         <image>
+            <Image url="@Icons/Disk.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image3" fitHeight="100.0" fitWidth="100.0">
+         <image>
+            <Image url="@Icons/Disk.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="playcircle" fill="#29334d" radius="30.0" stroke="#141a27" strokeType="INSIDE" strokeWidth="2.0">
+         <StackPane.margin>
+            <Insets left="-100.0" top="300.0" />
+         </StackPane.margin>
+      </Circle>
+      <Circle fx:id="circle411" fill="#29334d" radius="30.0" stroke="#141a27" strokeType="INSIDE" strokeWidth="2.0">
+         <StackPane.margin>
+            <Insets left="100.0" top="300.0" />
+         </StackPane.margin>
+      </Circle>
+      <ImageView fx:id="anmImage" fitHeight="26.0" fitWidth="26.0" opacity="0.69">
+         <image>
+            <Image url="@Icons/playanm.png" />
+         </image>
+         <StackPane.margin>
+            <Insets left="-100.0" top="300.0" />
+         </StackPane.margin>
+      </ImageView>
+      <ImageView fx:id="musicImage" fitHeight="27.0" fitWidth="27.0" opacity="0.76">
+         <image>
+            <Image url="@Icons/music.png" />
+         </image>
+         <StackPane.margin>
+            <Insets left="100.0" top="300.0" />
+         </StackPane.margin>
+      </ImageView>
+      <ImageView fx:id="playerIcon" fitHeight="50.0" fitWidth="50.0">
+         <image>
+            <Image url="@Icons/Punch.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="40.0">
+         <image>
+            <Image url="@Icons/leftarrow.png" />
+         </image>
+         <StackPane.margin>
+            <Insets right="275.0" />
+         </StackPane.margin>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="40.0">
+         <image>
+            <Image url="@Icons/rightarrow.png" />
+         </image>
+         <StackPane.margin>
+            <Insets left="275.0" />
+         </StackPane.margin>
+      </ImageView>
+      <Button id="Gamestart-button" fx:id="startbutton" mnemonicParsing="false" onAction="#StartGame" opacity="0.0" prefHeight="57.0" prefWidth="75.0" text="GameStart">
+         <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+         </padding>
+      </Button>
+      <Button id="start-button" fx:id="playbutton" maxHeight="20.0" maxWidth="20.0" mnemonicParsing="false" onAction="#play" opacity="0.0" text="Butstr">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <StackPane.margin>
+            <Insets left="-100.0" top="300.0" />
+         </StackPane.margin>
+      </Button>
+      <Button id="start-button" fx:id="music" maxHeight="20.0" maxWidth="20.0" mnemonicParsing="false" onAction="#music" opacity="0.0" text="Butstr">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <StackPane.margin>
+            <Insets left="100.0" top="300.0" />
+         </StackPane.margin>
+      </Button>
+      <Button id="left-button" fx:id="left" maxHeight="20.0" maxWidth="20.0" mnemonicParsing="false" onAction="#playerTypeLeft" opacity="0.0" text="Butlft">
+         <padding>
+            <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+         </padding>
+         <StackPane.margin>
+            <Insets right="275.0" />
+         </StackPane.margin>
+      </Button>
+      <Button id="right-button" fx:id="left1" maxHeight="20.0" maxWidth="20.0" mnemonicParsing="false" onAction="#playerTypeRight" opacity="0.0" text="Butrght">
+         <padding>
+            <Insets bottom="30.0" left="20.0" right="20.0" top="30.0" />
+         </padding>
+         <StackPane.margin>
+            <Insets left="275.0" />
+         </StackPane.margin>
+      </Button>
+   </children>
+</StackPane>
